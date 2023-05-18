@@ -1,0 +1,84 @@
+body {
+  background-color: #be98464f;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0c0b0be8;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .nav-links a {
+    color: #f5f4f4;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #f1c40f;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 50px;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 70px;
+  }
+.image-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  .image-container img {
+    margin-right:50px;
+    margin-top: 130px;
+    padding: 20px;
+    margin-bottom: 70px;
+
+  }
+  .img{
+    border-radius: 15%;
+ }
+ p{
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+.food-text {
+   display: inline-block;
+  position:absolute;
+  margin-left: -450px;
+  margin-bottom: 350;
+}
+  
+
+.drinks-text{
+ 
+  display: inline-block;
+  position:absolute;
+  margin-left: 450px;
+  margin-bottom: 350;
+}

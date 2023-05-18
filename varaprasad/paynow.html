@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    label {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Payment</h1>
+  <form>
+    <input type="radio" id="cardPayment" name="paymentMethod" value="card">
+    <label for="cardPayment">Card</label><br>
+    
+    <input type="radio" id="upiPayment" name="paymentMethod" value="upi">
+    <label for="upiPayment">UPI</label><br><br>
+    
+    <input type="submit" value="Pay now">
+  </form>
+</body>
+</html>

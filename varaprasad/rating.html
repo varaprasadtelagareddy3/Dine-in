@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rating.js">
+    <meta charset="UTF-8">
+    <title>Star rating using pure CSS</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <h1>Dine in</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="reservation.html">Table reservation</a></li>
+          </ul>
+      </nav>
+      <!-- Existing reviews -->
+      <div id="reviews">
+        <h2>Reviews</h2>
+        <ul>
+          <div class="r1">
+            <li>
+            <strong>KCR</strong>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <p>good enough.</p>
+          </li>
+          <li>
+            <strong>Girish</strong>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <p>Great.</p>
+          </li>
+          <li>
+            <strong>Kruthik</strong>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <p>Excellent Service.</p>
+          </li>
+          <li>
+            <strong>Santhosh</strong>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <p>one of the best cafe ever visited.</p>
+          </li>
+          </div>
+          <div class="r2">
+          <li>
+            <strong>Rushi</strong>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <p>Ambians is very good.</p>
+          </li>
+          <li>
+            <strong>Kishore</strong>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <p>must try croissant.</p>
+          </li>
+          <li>
+            <strong>Prem</strong>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <p>must visit.</p>
+          </li>
+          <li>
+            <strong>Venu</strong>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <p>decent place with good food.</p>
+          </li>
+          </div>
+        </ul>
+      </div>
+<form>
+    <h3>Rate Us</h3>
+     <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    
+    <label for="rating">Rating:</label>
+    <select id="rating" required>
+      <option value="">Select rating</option>
+      <option value="1">1 star</option>
+      <option value="2">2 stars</option>
+      <option value="3">3 stars</option>
+      <option value="4">4 stars</option>
+      <option value="5">5 stars</option>
+    </select>
+    
+    <label for="review">Review:</label>
+    <textarea id="review" rows="5"></textarea>
+    
+    <button type="submit">Submit</button>
+  </form>

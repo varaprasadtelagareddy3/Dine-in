@@ -1,0 +1,164 @@
+@media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #be98464f;
+}
+  .cart-btn {
+    background-color: #361500;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+  
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0c0b0be8;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .nav-links a {
+    color: #f5f4f4;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #f1c40f;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 50px;
+  }
+  
+  .Food-items > div {
+    background-color: rgba(250, 250, 250, 0.185);
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .Food-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .Food-items h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #070707;
+    text-align: center;
+  }
+  
+  .Food-items .Food-img {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Food-items img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .Food-description {
+    text-align: left;
+    padding: 0 20px;
+  }
+  
+  .Food-description p {
+    margin-bottom: 10px;
+  }
+  
+  .Food-description .Food-price {
+    color: #dc143c;
+    font-weight: bold;
+  }
+  
+  .Food-img {
+    flex-basis: 40%;
+  } 
+  /* Menu section styles */
+  .menu-container {
+    padding: 4rem 0;
+  }
+  
+  .menu-type h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .menu-type .img-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu-type img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .menu-item {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-item img {
+    width: 40%;
+    margin-right: 2rem;
+  }
+  
+  .menu-item h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .menu-item p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .menu-item .price {
+    font-size: 1.5rem;
+    color: #ff6347;
+    font-weight: bold;
+  }
+ 

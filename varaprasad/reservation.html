@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <link rel="stylesheet" href="reservation.css">
+ </body>
+ <body>
+  <nav class="navbar">
+      <div class="logo">
+        <h1>Dine in</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="rating.html">Reviews</a></li>
+        </ul>
+    </nav>
+    <h1 >Table reservation:</h1>
+ <p>(Fill the below form to reserve table in our Dine in )</p>
+ 
+ <form>
+    <table>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email"></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Phone:</label></td>
+        <td><input type="tel" id="phone" name="phone"></td>
+      </tr>
+      <tr>
+        <td><label for="table-size">Table size:</label></td>
+        <td>
+          <select id="table-size" name="table-size">
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="date">Date:</label></td>
+        <td><input type="date" id="date" name="date"></td>
+      </tr>
+      <tr>
+        <td><label for="time">Time:</label></td>
+        <td><input type="time" id="time" name="time"></td>
+      </tr>
+      <tr>
+        <td><label for="time">food order:</label></td>
+        <td> <textarea cols="30" rows="6" placeholder="food you want to order"></textarea> <a href="#"></a></td>
+      </tr>
+    </table>
+    <button type="submit">Submit</button>
+    <button type="Reset">Reset</button>
+</form>
+  

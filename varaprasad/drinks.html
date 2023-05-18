@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script type="text/javascript">
+    function addCart(itemName,  price)  {
+        var items = [];
+      items = JSON.parse(localStorage.getItem('items')) || [];
+      items.push({name:itemName, price:price});
+      localStorage.setItem('items', JSON.stringify(items));
+    }
+    </script>
+<nav class="navbar">
+    <div class="logo">
+      <h1>Dine in</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Menu.html">Menu</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="reservation.html">Table reservation</a></li>
+      <li><a href="rating.html">Reviews</a></li>
+      </ul>
+  </nav><section id="menu">
+    <div class="menu-container container">
+        <div class="menu-type fruite">
+            <h2>Milk Shakes Menu</h2>
+            <div class="img-container"><img
+                    src="https://thumbs.dreamstime.com/b/soft-drinks-glasses-bar-restaurant-cafe-menu-hand-drawn-beverages-vector-illustrations-set-lemonade-coffee-%20tea-different-91022781.jpg"
+                    alt="soft-drinks-glasses-bar-restaurant-cafe-menu-hand-drawn-beverages-vector-illustrations-set-lemonade-coffee-%20tea-different-91022781"
+                    width="500" height="500"></div>
+                    <form action="/cart" method="post">
+                        <input type="hidden" name="product_id" value="123">
+                        
+                      </form>
+                    </div>
+        <div class="drink-items">
+            <div>
+                <h2 class="drink-title">Classic Vanilla Shake</h2>
+                <div class="drink-item">
+                    <div class="drink-description">
+                        <p>A timeless favorite made with creamy vanilla ice cream.</p>
+                        <p class="drink-price">Price: ₹ 179</p>
+                        <button class="cart-btn" onclick="addCart('Classic Vanilla Shake',179)">Add to Cart</button>
+                </div>
+                    <div class="drink-img"><img
+                            src="https://lh3.googleusercontent.com/9tmlli44l4gQWMG_GM2q2lK8benRTyfZ2K_2DrgbMPE2VEufHS3CPUh3MBoZt_7PWTdDzHO8ED7yiK_rKjIGbg=w4080-h4080-c-rj-v1-e365"
+                            alt="error" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="drink-title">Rich Chocolate Shake</h2>
+                <div class="drink-item">
+                    <div class="drink-description">
+                        <p> Indulge in a smooth and chocolatey delight.</p>
+                        <p class="drink-price">Price: ₹ 199</p>
+                        <button class="cart-btn" onclick="addCart('Rich Chocolate Shake',199)">Add to Cart</button>
+                    </div>
+                    <div class="drink-img"><img
+                            src="https://bakingmischief.com/wp-content/uploads/2019/07/chocolate-milkshake-feature.jpg"
+                            alt="coffee-cup" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="drink-title">Strawberry Dream Shake</h2>
+                <div class="drink-item">
+                    <div class="drink-description">
+                        <p>Enjoy the fruity goodness of fresh strawberries blended with creamy milk and ice cream.</p>
+                        <p class="drink-price">Price: ₹ 250</p>
+                        <button class="cart-btn" onclick="addCart('Strawberry Dream Shake', 250)">Add to Cart</button>
+                    </div>
+                    <div class="drink-img"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FO9IMmh_7ar2S30BX9AINasFz5vWQxTSTA&usqp=CAU"
+                            alt="worldtea_abouttea_organic_img1" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="drink-title">Oreo Shake</h2>
+                <div class="drink-item">
+                    <div class="drink-description">
+                        <p>A heavenly blend of crushed Oreo cookies and creamy indulgence.</p>
+                        <p class="drink-price">Price: ₹ 169</p>
+                        <button class="cart-btn" onclick="addCart('Oreo Shake',169)">Add to Cart</button>
+                    </div>
+                    <div class="drink-img"><img
+                            src="https://saltandbaker.com/wp-content/uploads/2020/12/oreo-milkshake-recipe.jpg"
+                            alt="How-to-make-bubble-tea-500x375" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="drink-title">Watermelon Lychee Granita</h2>
+                <div class="drink-item">
+                    <div class="drink-description">
+                        <p>WATERMELON LYCHEE GRANITA IS A REFRESHING ICED DESSERT THAT<br>
+                            IS JUST HEAVEN FOR SUMMER</p>
+                        <p class="drink-price">Price: ₹ 189</p>
+                        <button class="cart-btn" onclick="addCart('Watermelon Lychee Granita', 189)">Add to Cart</button>
+                    </div>
+                    <div class="drink-img"><img
+                            src="https://www.mynutribulletrecipes.com/wp-content/uploads/2014/10/Watermelon-Lychee-and-Lime-Juice.jpg"
+                            alt="Watermelon-Lychee-and-Lime-Juice" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="drink-title">Cool Kiwi Juice</h2>
+                <div class="drink-item">
+                    <div class="drink-description">
+                        <p>It is little tangier, saltier, sweet, a perfect juice</p>
+                        <p class="drink-price">Price: ₹ 250</p>
+                        <button class="cart-btn" onclick="addCart('Cool Kiwi juice', 250)">Add to Cart</button>
+                    </div>
+                    <div class="drink-img"><img
+                            src="https://png.pngtree.com/thumb_back/fh260/background/20210912/pngtree-kiwi-kiwi-juice-food-image_863903.jpg"
+                            alt="pngtree-kiwi-kiwi-juice-food-image_863903" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="drink-title">Virgin Punch</h2>
+                <div class="drink-item">
+                    <div class="drink-description">
+                        <p>Very fruity, very refreshing. Juices of fruits like apple,<br>
+                            mango, orange and some sparkling lemonade mixed together<br>
+                            with lots of ice.</p>
+                        <p class="drink-price">Price: ₹ 250</p>
+                        <button class="cart-btn" onclick="addCart('Virgin Punch', 250)">Add to Cart</button>
+                    </div>
+                    <div class="drink-items">
+                        <div class="drink-img"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEmVi87JKbkB-4DgcuICQhRNGSAmwp3p8QrUVP7jSOERA1p1uLpzbuU6dlgPodEHG_o5Y&amp;usqp=CAU"
+                                alt="images" width="500" height="500" class="center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>

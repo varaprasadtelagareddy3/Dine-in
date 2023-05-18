@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <link rel="stylesheet" href="food.css">
+</head>
+<nav class="navbar">
+    <div class="logo">
+      <h1>Dine in</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Menu.html">Menu</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="reservation.html">Table reservation</a></li>
+      <li><a href="rating.html">Reviews</a></li>
+      </ul>
+  </nav>
+  <script type="text/javascript">
+    function addCart(itemName,  price)  {
+        var items = [];
+      items = JSON.parse(localStorage.getItem('items')) || [];
+      items.push({name:itemName, price:price});
+      localStorage.setItem('items', JSON.stringify(items));
+    }
+    </script>
+<section id="menu">
+    <div class="menu-container container">
+        <div class="menu-type fruite">
+            <h2>Food Menu</h2>
+            <div class="img-container"><img
+                    src="https://img.freepik.com/premium-vector/set-vector-illustration-delicious-fast-food-collection-junk-food-set-vector-food-illustration_674879-99.jpg?w=2000"
+                    alt="error"
+                    width="500" height="500"></div>
+        </div>
+        <div class="Food-items">
+            <div>
+                <h2 class="Food-title">Biryani</h2>
+                <div class="Food-item">
+                    <div class="Food-description">
+                        <p>A flavorful rice dish with aromatic spices and tender meat.</p>
+                        <p class="Food-price">Price: ₹ 269</p>
+                        <button class="cart-btn" onclick="addCart('Biryani', 269)">Add to Cart</button>
+                    </div>
+                    <div class="Food-img"><img
+                            src="https://imagevars.gulfnews.com/2022/03/11/Guntur-Gongura-Biryani-_17f793bfa09_large.jpg"
+                            alt="error" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="Food-title">Lemon rice</h2>
+                <div class="Food-item">
+                    <div class="Food-description">
+                        <p>Tangy and fragrant rice dish with zesty citrus flavors.</p>
+                        <p class="Food-price">Price: ₹ 169</p>
+                        <button class="cart-btn" onclick="addCart('Lemon rice', 169)">Add to Cart</button>
+                    
+                    </div>
+                    <div class="Food-img"><img
+                            src="https://www.cookwithmanali.com/wp-content/uploads/2016/01/South-Indian-Lemon-Rice-Recipe.jpg"
+                            alt="error" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="Food-title">Fried rice</h2>
+                <div class="Food-item">
+                    <div class="Food-description">
+                        <p>Savory stir-fried dish with rice, vegetables, and delectable seasonings.</p>
+                        <p class="Food-price">Price: ₹ 179</p>
+                        <button class="cart-btn" onclick="addCart('Fried rice',179)">Add to Cart</button>
+                    </div>
+                    <div class="Food-img"><img
+                            src="https://www.indianveggiedelight.com/wp-content/uploads/2023/01/veg-fried-rice.jpg"
+                            alt="error" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="Food-title">Sandwich</h2>
+                <div class="Food-item">
+                    <div class="Food-description">
+                        <p>A sandwich is a food typically consisting of vegetables, cheese or meat,<br>
+                         placed on or between slices of bread, or more generally any dish where in<br> 
+                         bread serves as a container or wrapper for another food type</p>
+                        <p class="Food-price">Price: ₹ 199</p>
+                        <button class="cart-btn" onclick="addCart('Sandwich',199)">Add to Cart</button>
+                    </div>
+                    <div class="Food-img"><img
+                            src="https://insanelygoodrecipes.com/wp-content/uploads/2022/02/Delicious-Homemade-Croissant-Sandwich-with-Ham-and-Scrambled-Eggs-500x500.jpg"
+                            alt="error" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="Food-title">Pizza</h2>
+                <div class="Food-item">
+                    <div class="Food-description">
+                        <p>Our favorite pizzeria should have dairy-fresh cheese, garden-fresh tomatoes and no wilting veggies</p>
+                        <p class="Food-price">Price: ₹ 189</p>
+                        <button class="cart-btn" onclick="addCart('Pizza', 189)">Add to Cart</button>
+                    </div>
+                    <div class="Food-img"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg"
+                            alt="error" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="Food-title">Burger</h2>
+                <div class="Food-item">
+                    <div class="Food-description">
+                        <p> Juicy patty nestled between soft buns, topped with flavorful ingredients.</p>
+                        <p class="Food-price">Price: ₹ 149</p>
+                        <button class="cart-btn" onclick="addCart('Burger',149)">Add to Cart</button>
+                    </div>
+                    <div class="Food-img"><img
+                            src="https://c.ndtvimg.com/2022-06/gp4k2jro_burgers_625x300_20_June_22.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350?im=FaceCrop,algorithm=dnn,width=1200,height=886"
+                            alt="error" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="Food-title">Meals</h2>
+                <div class="Food-item">
+                    <div class="Food-description">
+                        <p>Nourishing and satisfying combinations of dishes that delight the palate.<br/>
+                             We serve it with rice,dal,chicken,fish,prawns,sambar,papads,potato fry,sweet and many </p>
+                        <p class="Food-price">Price: ₹ 199</p>
+                        <button class="cart-btn" onclick="addCart('Meals',199)">Add to Cart</button>
+                    </div>
+                    <div class="Food-img"><img
+                        src="https://media-cdn.tripadvisor.com/media/photo-s/0e/6f/8d/cf/veg-meals.jpg"
+                        alt="error" width="500" height="500" class="center">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
